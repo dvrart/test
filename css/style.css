@@ -1,0 +1,166 @@
+@charset "UTF-8";
+.wrapper {
+  font-family: "Roboto", sans-serif;
+  margin: 50px auto;
+  padding: 15px;
+  border: 3px solid #f55e5e;
+  width: 300px;
+  font-size: 12px;
+}
+.wrapper a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper__text {
+  text-align: right;
+  color: #afafaf;
+}
+
+.inner-img {
+  width: 250px;
+}
+
+.discount {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.discount__number {
+  background-color: #f55e5e;
+  color: white;
+  margin-right: 3px;
+  padding: 1px 3px;
+}
+
+.discount__text {
+  background-color: #f55e5e;
+  color: white;
+  padding: 1px 3px;
+}
+
+.inner__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.reviews {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.rating-area {
+  overflow: hidden;
+}
+
+.rating-area:not(:checked) > input {
+  display: none;
+}
+
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 15px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 32px;
+  color: #dadada;
+  text-shadow: 1px 1px #bebebe;
+}
+
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+  position: relative;
+}
+
+.reviews__link {
+  color: #acacac;
+  text-decoration: none;
+}
+
+.textPrice {
+  margin-bottom: 2px;
+}
+
+.mainPrice {
+  color: #f55e5e;
+  font-size: 16px;
+  font-weight: 700;
+  display: initial;
+  margin-right: 5px;
+}
+
+.cashback {
+  display: initial;
+  font-weight: 700;
+  background-color: #f3f8ae;
+  padding: 0 5px;
+}
+
+.oldPrice {
+  margin-top: 5px;
+  text-decoration: line-through;
+  color: #a7a7a7;
+}
+
+.content-bottom {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff !important;
+  padding: 7px 50px;
+  background-color: #037e03;
+  border-radius: 50px;
+  margin-right: 15px;
+  transition: all 1s;
+}
+.button:hover {
+  background-color: #00410e;
+}
+
+.favorite__heart {
+  width: 20px;
+  margin-right: 15px;
+  filter: opacity(0.5);
+  transition: all 1s;
+}
+.favorite__heart:hover {
+  filter: opacity(1);
+}
+
+.favorite__scales {
+  width: 20px;
+  filter: opacity(0.5);
+  transition: all 1s;
+}
+.favorite__scales:hover {
+  filter: opacity(1);
+}/*# sourceMappingURL=style.css.map */
